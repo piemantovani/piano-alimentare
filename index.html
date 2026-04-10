@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Il Mio Piano Alimentare</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f4; padding: 20px; }
+        .card { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { color: #2c3e50; border-bottom: 2px solid #eee; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; }
+        th { background: #fafafa; }
+        .kcal { font-weight: bold; color: #e67e22; }
+    </style>
+</head>
+<body>
+    <h1>🍴 Piano Alimentare Navigabile</h1>
+    <div id="contenuto">Caricamento dati...</div>
+
+    <script>
+        // Carichiamo il tuo file .jsx come testo e lo puliamo per renderlo leggibile
+        fetch('piano_alimentare.jsx')
+            .then(response => response.text())
+            .then(text => {
+                // Pulizia brutale per estrarre solo gli array JSON dal file JS
+                const dataStr = text.split('const COLAZIONI = ')[1].split('];')[0] + ']';
+                const colazioni = JSON.parse(dataStr.replace(/(['"])?([a-z0-9A-Z_]+)(['"])?:/g, '"$2":').replace(/'/g, '"'));
+                
+                let html = '';
+                colazioni.forEach(pasto => {
+                    html += `<div class="card"><h2>${pasto.name}</h2><table><tr><th>Cibo</th><th>Quantità</th><th>Kcal</th></tr>`;
+                    pasto.items.forEach(item => {
+                        html += `<tr><td>${item.food}</td><td>${item.qty}</td><td class="kcal">${item.kcal}</td></tr>`;
+                    });
+                    html += `</table></div>`;
+                });
+                document.getElementById('contenuto').innerHTML = html;
+            })
+            .catch(err => {
+                document.getElementById('contenuto').innerHTML = "Errore nel caricamento. Assicurati che il file si chiami piano_alimentare.jsx";
+            });
+    </script>
+</body>
+</html>
