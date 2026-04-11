@@ -1,0 +1,3029 @@
+{
+  "meta": {
+    "titolo": "Piano Alimentare Pietro",
+    "responsabile": "Dott.ssa Matacchione Giada",
+    "data_piano": "27/09/2023",
+    "obiettivo_kcal": 1800,
+    "macro_target": {
+      "carboidrati_g": 225,
+      "carboidrati_pct": 50,
+      "proteine_g": 113,
+      "proteine_pct": 25,
+      "grassi_g": 50,
+      "grassi_pct": 25
+    },
+    "acqua_litri_giorno": 2.5,
+    "attivita_fisica": "30 min almeno 3-4 volte/settimana",
+    "ultimo_aggiornamento": "2026-04-10"
+  },
+  "colazioni": [
+    {
+      "id": "col_1",
+      "nome": "Pane + crema di nocciole",
+      "alimenti": [
+        {
+          "nome": "Pane integrale",
+          "quantita": "50g",
+          "kcal": 117,
+          "carboidrati": 22,
+          "proteine": 4,
+          "grassi": 1.2
+        },
+        {
+          "nome": "Crema 100% nocciole",
+          "quantita": "2 cucchiaini (12g)",
+          "kcal": 76,
+          "carboidrati": 1.5,
+          "proteine": 2.4,
+          "grassi": 7
+        },
+        {
+          "nome": "Frutto di stagione",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 248,
+      "note": "La crema deve essere 100% nocciole, senza zucchero/olio di palma. Marche OK: Rigoni, Venchi, Damiano."
+    },
+    {
+      "id": "col_2",
+      "nome": "Pane + burro d'arachidi + marmellata",
+      "alimenti": [
+        {
+          "nome": "Pane integrale",
+          "quantita": "50g",
+          "kcal": 117,
+          "carboidrati": 22,
+          "proteine": 4,
+          "grassi": 1.2
+        },
+        {
+          "nome": "Burro di arachidi 100%",
+          "quantita": "2 cucchiaini (12g)",
+          "kcal": 70,
+          "carboidrati": 1.2,
+          "proteine": 3,
+          "grassi": 6
+        },
+        {
+          "nome": "Marmellata senza zuccheri aggiunti",
+          "quantita": "2 cucchiaini (12g)",
+          "kcal": 18,
+          "carboidrati": 4,
+          "proteine": 0,
+          "grassi": 0
+        },
+        {
+          "nome": "Frutto di stagione",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 260,
+      "note": "Marmellata solo 'senza zuccheri aggiunti' (Rigoni Fiordifrutta, Zuegg)."
+    },
+    {
+      "id": "col_3",
+      "nome": "Yogurt + fiocchi d'avena + frutto",
+      "alimenti": [
+        {
+          "nome": "Yogurt naturale",
+          "quantita": "1 vasetto (125g)",
+          "kcal": 50,
+          "carboidrati": 5,
+          "proteine": 6.5,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Fiocchi d'avena",
+          "quantita": "40g",
+          "kcal": 152,
+          "carboidrati": 26,
+          "proteine": 5,
+          "grassi": 3
+        },
+        {
+          "nome": "Frutto di stagione",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 257,
+      "note": null
+    },
+    {
+      "id": "col_4",
+      "nome": "Latte + fiocchi di cereali",
+      "alimenti": [
+        {
+          "nome": "Latte parzialmente scremato",
+          "quantita": "1 tazza (200g)",
+          "kcal": 92,
+          "carboidrati": 10,
+          "proteine": 6.4,
+          "grassi": 3.2
+        },
+        {
+          "nome": "Fiocchi di cereali integrali",
+          "quantita": "40g",
+          "kcal": 144,
+          "carboidrati": 30,
+          "proteine": 3.5,
+          "grassi": 1
+        },
+        {
+          "nome": "Miele",
+          "quantita": "2 cucchiaini (10g)",
+          "kcal": 30,
+          "carboidrati": 8,
+          "proteine": 0,
+          "grassi": 0
+        }
+      ],
+      "kcal_totali": 266,
+      "note": "Cereali: scegli quelli con meno di 10g zuccheri/100g."
+    },
+    {
+      "id": "col_5",
+      "nome": "Fette biscottate + marmellata + frutto",
+      "alimenti": [
+        {
+          "nome": "Fette biscottate integrali",
+          "quantita": "4 fette",
+          "kcal": 140,
+          "carboidrati": 25,
+          "proteine": 4,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Marmellata senza zuccheri aggiunti",
+          "quantita": "2 cucchiaini (12g)",
+          "kcal": 18,
+          "carboidrati": 4,
+          "proteine": 0,
+          "grassi": 0
+        },
+        {
+          "nome": "Frutto di stagione",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 213,
+      "note": "Preferire sempre il pane alle fette biscottate."
+    },
+    {
+      "id": "col_6",
+      "nome": "Brunch weekend",
+      "alimenti": [
+        {
+          "nome": "Pane integrale tostato",
+          "quantita": "50g",
+          "kcal": 117,
+          "carboidrati": 22,
+          "proteine": 4,
+          "grassi": 1.2
+        },
+        {
+          "nome": "Uovo strapazzato",
+          "quantita": "1 uovo",
+          "kcal": 78,
+          "carboidrati": 0.5,
+          "proteine": 6.5,
+          "grassi": 5.5
+        },
+        {
+          "nome": "Avocado",
+          "quantita": "50g",
+          "kcal": 80,
+          "carboidrati": 1,
+          "proteine": 1,
+          "grassi": 7.5
+        },
+        {
+          "nome": "Pomodorini",
+          "quantita": "80g",
+          "kcal": 14,
+          "carboidrati": 3,
+          "proteine": 0.7,
+          "grassi": 0.1
+        }
+      ],
+      "kcal_totali": 289,
+      "note": "Opzione weekend / brunch"
+    }
+  ],
+  "spuntini_mattina": [
+    {
+      "id": "spm_1",
+      "nome": "Panino + prosciutto cotto",
+      "alimenti": [
+        {
+          "nome": "Pane integrale",
+          "quantita": "40g",
+          "kcal": 94,
+          "carboidrati": 17,
+          "proteine": 3.2,
+          "grassi": 1
+        },
+        {
+          "nome": "Prosciutto cotto sgrassato",
+          "quantita": "2 fette (40g)",
+          "kcal": 46,
+          "carboidrati": 0.5,
+          "proteine": 7,
+          "grassi": 2
+        }
+      ],
+      "kcal_totali": 140,
+      "note": "Sgrassato = privato del grasso visibile"
+    },
+    {
+      "id": "spm_2",
+      "nome": "Panino + tonno al naturale",
+      "alimenti": [
+        {
+          "nome": "Pane integrale",
+          "quantita": "40g",
+          "kcal": 94,
+          "carboidrati": 17,
+          "proteine": 3.2,
+          "grassi": 1
+        },
+        {
+          "nome": "Tonno al naturale sgocciolato",
+          "quantita": "50g",
+          "kcal": 55,
+          "carboidrati": 0,
+          "proteine": 13,
+          "grassi": 0.5
+        }
+      ],
+      "kcal_totali": 149,
+      "note": null
+    },
+    {
+      "id": "spm_3",
+      "nome": "Panino + bresaola",
+      "alimenti": [
+        {
+          "nome": "Pane integrale",
+          "quantita": "40g",
+          "kcal": 94,
+          "carboidrati": 17,
+          "proteine": 3.2,
+          "grassi": 1
+        },
+        {
+          "nome": "Bresaola",
+          "quantita": "2-3 fette (30g)",
+          "kcal": 45,
+          "carboidrati": 0,
+          "proteine": 10,
+          "grassi": 0.7
+        }
+      ],
+      "kcal_totali": 139,
+      "note": null
+    },
+    {
+      "id": "spm_4",
+      "nome": "Panino + prosciutto crudo",
+      "alimenti": [
+        {
+          "nome": "Pane integrale",
+          "quantita": "40g",
+          "kcal": 94,
+          "carboidrati": 17,
+          "proteine": 3.2,
+          "grassi": 1
+        },
+        {
+          "nome": "Prosciutto crudo sgrassato",
+          "quantita": "2 fette (30g)",
+          "kcal": 50,
+          "carboidrati": 0,
+          "proteine": 8,
+          "grassi": 2
+        }
+      ],
+      "kcal_totali": 144,
+      "note": null
+    },
+    {
+      "id": "spm_5",
+      "nome": "Crackers + frutta",
+      "alimenti": [
+        {
+          "nome": "Crackers integrali",
+          "quantita": "1 pacchetto (30g)",
+          "kcal": 120,
+          "carboidrati": 20,
+          "proteine": 3,
+          "grassi": 3
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "100g",
+          "kcal": 40,
+          "carboidrati": 10,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 160,
+      "note": null
+    },
+    {
+      "id": "spm_6",
+      "nome": "Wasa + ricotta",
+      "alimenti": [
+        {
+          "nome": "Wasa integrali",
+          "quantita": "3 fette",
+          "kcal": 105,
+          "carboidrati": 20,
+          "proteine": 3,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Ricotta di vacca",
+          "quantita": "2 cucchiai (40g)",
+          "kcal": 55,
+          "carboidrati": 1.5,
+          "proteine": 3,
+          "grassi": 4
+        }
+      ],
+      "kcal_totali": 160,
+      "note": null
+    },
+    {
+      "id": "spm_7",
+      "nome": "Fiocchi d'avena + yogurt",
+      "alimenti": [
+        {
+          "nome": "Fiocchi d'avena",
+          "quantita": "30g",
+          "kcal": 114,
+          "carboidrati": 20,
+          "proteine": 4,
+          "grassi": 2.3
+        },
+        {
+          "nome": "Yogurt naturale",
+          "quantita": "125g",
+          "kcal": 50,
+          "carboidrati": 5,
+          "proteine": 6.5,
+          "grassi": 0.5
+        }
+      ],
+      "kcal_totali": 164,
+      "note": null
+    }
+  ],
+  "spuntini_pomeriggio": [
+    {
+      "id": "spp_1",
+      "nome": "Pane + frutta secca",
+      "alimenti": [
+        {
+          "nome": "Pane integrale",
+          "quantita": "40g",
+          "kcal": 94,
+          "carboidrati": 17,
+          "proteine": 3.2,
+          "grassi": 1
+        },
+        {
+          "nome": "Frutta secca mista",
+          "quantita": "15g",
+          "kcal": 90,
+          "carboidrati": 2,
+          "proteine": 3,
+          "grassi": 8
+        }
+      ],
+      "kcal_totali": 184,
+      "note": "Mandorle, noci, nocciole, anacardi, pistacchi..."
+    },
+    {
+      "id": "spp_2",
+      "nome": "Crackers + frutta secca",
+      "alimenti": [
+        {
+          "nome": "Crackers integrali",
+          "quantita": "1 pacchetto (30g)",
+          "kcal": 120,
+          "carboidrati": 20,
+          "proteine": 3,
+          "grassi": 3
+        },
+        {
+          "nome": "Frutta secca mista",
+          "quantita": "15g",
+          "kcal": 90,
+          "carboidrati": 2,
+          "proteine": 3,
+          "grassi": 8
+        }
+      ],
+      "kcal_totali": 210,
+      "note": null
+    },
+    {
+      "id": "spp_3",
+      "nome": "Wasa + frutta secca",
+      "alimenti": [
+        {
+          "nome": "Wasa integrali",
+          "quantita": "3 fette",
+          "kcal": 105,
+          "carboidrati": 20,
+          "proteine": 3,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Frutta secca mista",
+          "quantita": "15g",
+          "kcal": 90,
+          "carboidrati": 2,
+          "proteine": 3,
+          "grassi": 8
+        }
+      ],
+      "kcal_totali": 195,
+      "note": null
+    },
+    {
+      "id": "spp_4",
+      "nome": "Yogurt + frutta secca",
+      "alimenti": [
+        {
+          "nome": "Yogurt naturale",
+          "quantita": "125g",
+          "kcal": 50,
+          "carboidrati": 5,
+          "proteine": 6.5,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Frutta secca mista",
+          "quantita": "15g",
+          "kcal": 90,
+          "carboidrati": 2,
+          "proteine": 3,
+          "grassi": 8
+        }
+      ],
+      "kcal_totali": 140,
+      "note": null
+    },
+    {
+      "id": "spp_5",
+      "nome": "Barretta + frutta secca",
+      "alimenti": [
+        {
+          "nome": "Barretta (cereali)",
+          "quantita": "1 barretta",
+          "kcal": 100,
+          "carboidrati": 17,
+          "proteine": 2,
+          "grassi": 3
+        },
+        {
+          "nome": "Frutta secca mista",
+          "quantita": "15g",
+          "kcal": 90,
+          "carboidrati": 2,
+          "proteine": 3,
+          "grassi": 8
+        }
+      ],
+      "kcal_totali": 190,
+      "note": null
+    }
+  ],
+  "pranzi": [
+    {
+      "id": "pra_1",
+      "nome": "Pasta + sgombro",
+      "alimenti": [
+        {
+          "nome": "Pasta integrale",
+          "quantita": "100g (crudo)",
+          "kcal": 348,
+          "carboidrati": 66,
+          "proteine": 13,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Sgombro al naturale sgocciolato",
+          "quantita": "100g",
+          "kcal": 177,
+          "carboidrati": 0,
+          "proteine": 19,
+          "grassi": 11
+        },
+        {
+          "nome": "Verdure miste",
+          "quantita": "200g",
+          "kcal": 40,
+          "carboidrati": 7,
+          "proteine": 3,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        }
+      ],
+      "kcal_totali": 745,
+      "tipo_secondo": "pesce",
+      "piatto_unico": false,
+      "consiglio": "Sgombro in scatola al naturale, praticissimo. Scolalo e condisci la pasta con pomodorini freschi."
+    },
+    {
+      "id": "pra_2",
+      "nome": "Pasta + tonno",
+      "alimenti": [
+        {
+          "nome": "Pasta integrale",
+          "quantita": "100g (crudo)",
+          "kcal": 348,
+          "carboidrati": 66,
+          "proteine": 13,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Tonno fresco/al naturale",
+          "quantita": "100g",
+          "kcal": 103,
+          "carboidrati": 0,
+          "proteine": 23,
+          "grassi": 1
+        },
+        {
+          "nome": "Verdure grigliate",
+          "quantita": "200g",
+          "kcal": 45,
+          "carboidrati": 7,
+          "proteine": 3,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        }
+      ],
+      "kcal_totali": 676,
+      "tipo_secondo": "pesce",
+      "piatto_unico": false,
+      "consiglio": "Il piano prevede 100g di tonno a pranzo. Se usi scatoletta, usa tonno AL NATURALE."
+    },
+    {
+      "id": "pra_3",
+      "nome": "Pasta + ricotta e pomodorini",
+      "alimenti": [
+        {
+          "nome": "Pasta integrale",
+          "quantita": "100g (crudo)",
+          "kcal": 348,
+          "carboidrati": 66,
+          "proteine": 13,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Ricotta vaccina",
+          "quantita": "100g (1 ricottina)",
+          "kcal": 138,
+          "carboidrati": 4,
+          "proteine": 8,
+          "grassi": 10
+        },
+        {
+          "nome": "Pomodorini",
+          "quantita": "150g",
+          "kcal": 27,
+          "carboidrati": 5,
+          "proteine": 1.5,
+          "grassi": 0.3
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        }
+      ],
+      "kcal_totali": 693,
+      "tipo_secondo": "formaggio",
+      "piatto_unico": false,
+      "consiglio": "Sciogli la ricotta nella pasta calda con acqua di cottura. Cremosa e veloce."
+    },
+    {
+      "id": "pra_4",
+      "nome": "Pasta + hummus di ceci",
+      "alimenti": [
+        {
+          "nome": "Pasta integrale",
+          "quantita": "100g (crudo)",
+          "kcal": 348,
+          "carboidrati": 66,
+          "proteine": 13,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Hummus di ceci",
+          "quantita": "100g",
+          "kcal": 175,
+          "carboidrati": 12,
+          "proteine": 7.5,
+          "grassi": 10
+        },
+        {
+          "nome": "Insalata mista",
+          "quantita": "200g",
+          "kcal": 30,
+          "carboidrati": 4,
+          "proteine": 2,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        }
+      ],
+      "kcal_totali": 733,
+      "tipo_secondo": "legumi",
+      "piatto_unico": false,
+      "consiglio": "L'hummus conta come secondo (legumi). Non aggiungere altro secondo."
+    },
+    {
+      "id": "pra_5",
+      "nome": "Riso + parmigiano",
+      "alimenti": [
+        {
+          "nome": "Riso basmati/integrale",
+          "quantita": "100g (crudo)",
+          "kcal": 350,
+          "carboidrati": 72,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Parmigiano Reggiano",
+          "quantita": "30g",
+          "kcal": 118,
+          "carboidrati": 0,
+          "proteine": 10,
+          "grassi": 8.5
+        },
+        {
+          "nome": "Rucola e pomodorini",
+          "quantita": "200g",
+          "kcal": 30,
+          "carboidrati": 5,
+          "proteine": 2.5,
+          "grassi": 0.3
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        }
+      ],
+      "kcal_totali": 678,
+      "tipo_secondo": "formaggio",
+      "piatto_unico": false,
+      "consiglio": "Il parmigiano è formaggio: max 1-2 volte/settimana come secondo. Se usato qui, non usare altro formaggio nella settimana."
+    },
+    {
+      "id": "pra_6",
+      "nome": "Pasta e legumi (piatto unico)",
+      "alimenti": [
+        {
+          "nome": "Pasta integrale",
+          "quantita": "80g (crudo)",
+          "kcal": 278,
+          "carboidrati": 53,
+          "proteine": 10,
+          "grassi": 2
+        },
+        {
+          "nome": "Legumi cotti (lenticchie/ceci/fagioli)",
+          "quantita": "150g",
+          "kcal": 150,
+          "carboidrati": 18,
+          "proteine": 10,
+          "grassi": 1
+        },
+        {
+          "nome": "Verdure (carota, sedano, cipolla)",
+          "quantita": "100g",
+          "kcal": 30,
+          "carboidrati": 5,
+          "proteine": 1,
+          "grassi": 0.2
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        }
+      ],
+      "kcal_totali": 638,
+      "tipo_secondo": "legumi",
+      "piatto_unico": true,
+      "consiglio": "Piatto unico! Pasta ridotta a 80g. Legumi secchi: 50g (= ~150g cotti)."
+    },
+    {
+      "id": "pra_7",
+      "nome": "Cous cous + pollo e verdure",
+      "alimenti": [
+        {
+          "nome": "Cous cous",
+          "quantita": "100g (crudo)",
+          "kcal": 356,
+          "carboidrati": 72,
+          "proteine": 12,
+          "grassi": 1.5
+        },
+        {
+          "nome": "Petto di pollo a cubetti",
+          "quantita": "100g",
+          "kcal": 110,
+          "carboidrati": 0,
+          "proteine": 23,
+          "grassi": 1.5
+        },
+        {
+          "nome": "Zucchine e peperoni",
+          "quantita": "200g",
+          "kcal": 40,
+          "carboidrati": 7,
+          "proteine": 2.5,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        }
+      ],
+      "kcal_totali": 686,
+      "tipo_secondo": "carne_bianca",
+      "piatto_unico": true,
+      "consiglio": "Piatto unico. Acqua bollente sul cous cous, copri 5 min."
+    },
+    {
+      "id": "pra_8",
+      "nome": "Insalatona + pane",
+      "alimenti": [
+        {
+          "nome": "Pane integrale",
+          "quantita": "120g",
+          "kcal": 280,
+          "carboidrati": 52,
+          "proteine": 10,
+          "grassi": 3
+        },
+        {
+          "nome": "Pollo o tacchino",
+          "quantita": "100g",
+          "kcal": 110,
+          "carboidrati": 0,
+          "proteine": 23,
+          "grassi": 1.5
+        },
+        {
+          "nome": "Insalata, pomodori, carote, mais",
+          "quantita": "250g",
+          "kcal": 55,
+          "carboidrati": 10,
+          "proteine": 3,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        }
+      ],
+      "kcal_totali": 625,
+      "tipo_secondo": "carne_bianca",
+      "piatto_unico": true,
+      "consiglio": "Il pane sostituisce la pasta (120g pane = 100g pasta). Ottima per l'estate."
+    },
+    {
+      "id": "pra_9",
+      "nome": "Pasta al ragù di carne",
+      "alimenti": [
+        {
+          "nome": "Pasta integrale",
+          "quantita": "100g (crudo)",
+          "kcal": 348,
+          "carboidrati": 66,
+          "proteine": 13,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Carne trita magra (manzo/pollo)",
+          "quantita": "100g",
+          "kcal": 120,
+          "carboidrati": 0,
+          "proteine": 20,
+          "grassi": 4.5
+        },
+        {
+          "nome": "Passata di pomodoro",
+          "quantita": "80g",
+          "kcal": 20,
+          "carboidrati": 4,
+          "proteine": 1,
+          "grassi": 0.2
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        },
+        {
+          "nome": "Verdure di contorno",
+          "quantita": "200g",
+          "kcal": 40,
+          "carboidrati": 7,
+          "proteine": 3,
+          "grassi": 0.5
+        }
+      ],
+      "kcal_totali": 708,
+      "tipo_secondo": "carne",
+      "piatto_unico": true,
+      "consiglio": "Piatto unico. Preparane il doppio e congela una porzione."
+    },
+    {
+      "id": "pra_10",
+      "nome": "Pasta + salmone fresco",
+      "alimenti": [
+        {
+          "nome": "Pasta integrale",
+          "quantita": "100g (crudo)",
+          "kcal": 348,
+          "carboidrati": 66,
+          "proteine": 13,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Salmone fresco",
+          "quantita": "120g",
+          "kcal": 230,
+          "carboidrati": 0,
+          "proteine": 24,
+          "grassi": 14
+        },
+        {
+          "nome": "Verdure miste",
+          "quantita": "200g",
+          "kcal": 40,
+          "carboidrati": 7,
+          "proteine": 3,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        }
+      ],
+      "kcal_totali": 753,
+      "tipo_secondo": "pesce",
+      "piatto_unico": false,
+      "consiglio": "Il salmone ha già molti grassi, quindi meno olio (3 cucchiaini invece di 4)."
+    },
+    {
+      "id": "pra_11",
+      "nome": "Tortellini + verdure",
+      "alimenti": [
+        {
+          "nome": "Tortellini secchi",
+          "quantita": "120g",
+          "kcal": 360,
+          "carboidrati": 58,
+          "proteine": 15,
+          "grassi": 7
+        },
+        {
+          "nome": "Verdure miste",
+          "quantita": "250g",
+          "kcal": 50,
+          "carboidrati": 9,
+          "proteine": 3.5,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "20g (4 cucchiaini)",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 20
+        }
+      ],
+      "kcal_totali": 590,
+      "tipo_secondo": "nessuno",
+      "piatto_unico": true,
+      "consiglio": "La pasta ripiena è già piatto unico. Abbina solo verdure e frutta, al massimo metà quantitativo di secondo."
+    },
+    {
+      "id": "pra_12",
+      "nome": "Pasta + mozzarella",
+      "alimenti": [
+        {
+          "nome": "Pasta integrale",
+          "quantita": "100g (crudo)",
+          "kcal": 348,
+          "carboidrati": 66,
+          "proteine": 13,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Mozzarella di vacca",
+          "quantita": "100g (1 mozzarella)",
+          "kcal": 253,
+          "carboidrati": 1,
+          "proteine": 18,
+          "grassi": 19
+        },
+        {
+          "nome": "Pomodorini",
+          "quantita": "150g",
+          "kcal": 27,
+          "carboidrati": 5,
+          "proteine": 1.5,
+          "grassi": 0.3
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        }
+      ],
+      "kcal_totali": 763,
+      "tipo_secondo": "formaggio",
+      "piatto_unico": false,
+      "consiglio": "Mozzarella = formaggio, max 1-2 volte/settimana. Meno olio perché la mozzarella ha già grassi."
+    }
+  ],
+  "cene": [
+    {
+      "id": "cen_1",
+      "nome": "Pollo alla piastra",
+      "tempo_minuti": 15,
+      "alimenti": [
+        {
+          "nome": "Petto di pollo",
+          "quantita": "200g",
+          "kcal": 220,
+          "carboidrati": 0,
+          "proteine": 46,
+          "grassi": 3
+        },
+        {
+          "nome": "Zucchine grigliate",
+          "quantita": "250g",
+          "kcal": 28,
+          "carboidrati": 4,
+          "proteine": 2.5,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 672,
+      "tipo_proteina": "carne_bianca",
+      "consiglio": "Marinalo 10 min con limone e rosmarino. Piastra ben calda, 5 min per lato."
+    },
+    {
+      "id": "cen_2",
+      "nome": "Merluzzo al forno",
+      "tempo_minuti": 20,
+      "alimenti": [
+        {
+          "nome": "Filetto di merluzzo",
+          "quantita": "250g",
+          "kcal": 203,
+          "carboidrati": 0,
+          "proteine": 45,
+          "grassi": 2
+        },
+        {
+          "nome": "Cavolfiore al vapore",
+          "quantita": "250g",
+          "kcal": 55,
+          "carboidrati": 8,
+          "proteine": 5,
+          "grassi": 0.7
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 682,
+      "tipo_proteina": "pesce",
+      "consiglio": "Carta forno, filetto sopra, pomodorini + olive. 180°C per 15 min."
+    },
+    {
+      "id": "cen_3",
+      "nome": "Frittata di verdure",
+      "tempo_minuti": 15,
+      "frequenza_max": "max 1 volta/settimana",
+      "alimenti": [
+        {
+          "nome": "Uova",
+          "quantita": "3 uova (150g)",
+          "kcal": 234,
+          "carboidrati": 1.5,
+          "proteine": 19.5,
+          "grassi": 16.5
+        },
+        {
+          "nome": "Spinaci o bietola",
+          "quantita": "200g",
+          "kcal": 46,
+          "carboidrati": 4,
+          "proteine": 6,
+          "grassi": 0.8
+        },
+        {
+          "nome": "Patate lesse",
+          "quantita": "300g (sostituto pane)",
+          "kcal": 240,
+          "carboidrati": 52,
+          "proteine": 6,
+          "grassi": 0.4
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 710,
+      "tipo_proteina": "uova",
+      "consiglio": "3 uova come dal piano! Lessa le patate la domenica. Uova max 1 volta a settimana."
+    },
+    {
+      "id": "cen_4",
+      "nome": "Ceci con verdure",
+      "tempo_minuti": 10,
+      "alimenti": [
+        {
+          "nome": "Ceci cotti (anche scatola sgocciolati)",
+          "quantita": "250g",
+          "kcal": 300,
+          "carboidrati": 37,
+          "proteine": 20,
+          "grassi": 6
+        },
+        {
+          "nome": "Carote e sedano",
+          "quantita": "200g",
+          "kcal": 45,
+          "carboidrati": 8,
+          "proteine": 2,
+          "grassi": 0.3
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 769,
+      "tipo_proteina": "legumi",
+      "consiglio": "Legumi secchi: 80g = ~250g cotti. Ceci scatola sgocciolati, scalda con rosmarino."
+    },
+    {
+      "id": "cen_5",
+      "nome": "Salmone al forno",
+      "tempo_minuti": 20,
+      "alimenti": [
+        {
+          "nome": "Salmone fresco",
+          "quantita": "200g",
+          "kcal": 384,
+          "carboidrati": 0,
+          "proteine": 40,
+          "grassi": 24
+        },
+        {
+          "nome": "Broccoli al vapore",
+          "quantita": "250g",
+          "kcal": 60,
+          "carboidrati": 8,
+          "proteine": 7,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "10g (2 cucchiaini)",
+          "kcal": 90,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 10
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 823,
+      "tipo_proteina": "pesce",
+      "consiglio": "Il salmone ha già molti grassi buoni, quindi meno olio (2 cucchiaini). Forno 200°C per 12-15 min."
+    },
+    {
+      "id": "cen_6",
+      "nome": "Vellutata + ricotta",
+      "tempo_minuti": 20,
+      "alimenti": [
+        {
+          "nome": "Vellutata di zucca o piselli",
+          "quantita": "300g",
+          "kcal": 105,
+          "carboidrati": 16,
+          "proteine": 3,
+          "grassi": 3
+        },
+        {
+          "nome": "Ricotta vaccina",
+          "quantita": "150g",
+          "kcal": 207,
+          "carboidrati": 6,
+          "proteine": 12,
+          "grassi": 15
+        },
+        {
+          "nome": "Pane integrale (crostini)",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 736,
+      "tipo_proteina": "formaggio",
+      "consiglio": "Ricotta 150g come da piano! Verdure surgelate vanno benissimo. Cuoci, frulla, ricotta a cucchiaiate sopra."
+    },
+    {
+      "id": "cen_7",
+      "nome": "Minestrone + feta",
+      "tempo_minuti": 5,
+      "alimenti": [
+        {
+          "nome": "Minestrone (anche surgelato)",
+          "quantita": "350g",
+          "kcal": 105,
+          "carboidrati": 16,
+          "proteine": 4,
+          "grassi": 2
+        },
+        {
+          "nome": "Mozzarella di vacca",
+          "quantita": "150g",
+          "kcal": 380,
+          "carboidrati": 1.5,
+          "proteine": 27,
+          "grassi": 28.5
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "10g (2 cucchiaini)",
+          "kcal": 90,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 10
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 864,
+      "tipo_proteina": "formaggio",
+      "consiglio": "Mozzarella 150g come da piano. Se usi feta (60g) le kcal scendono parecchio. Meno olio perché il formaggio ha già grassi."
+    },
+    {
+      "id": "cen_8",
+      "nome": "Tacchino + patate",
+      "tempo_minuti": 20,
+      "alimenti": [
+        {
+          "nome": "Fesa di tacchino",
+          "quantita": "200g",
+          "kcal": 210,
+          "carboidrati": 0,
+          "proteine": 40,
+          "grassi": 5
+        },
+        {
+          "nome": "Patate al forno",
+          "quantita": "300g (sostituto pane)",
+          "kcal": 240,
+          "carboidrati": 52,
+          "proteine": 6,
+          "grassi": 0.4
+        },
+        {
+          "nome": "Insalata mista",
+          "quantita": "200g",
+          "kcal": 30,
+          "carboidrati": 4,
+          "proteine": 2,
+          "grassi": 0.3
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 670,
+      "tipo_proteina": "carne_bianca",
+      "consiglio": "Patate 300g = sostituto del pane (dal piano originale). Cubetti piccoli a 220°C per 15 min."
+    },
+    {
+      "id": "cen_9",
+      "nome": "Fagioli e verdure",
+      "tempo_minuti": 10,
+      "alimenti": [
+        {
+          "nome": "Fagioli cotti (borlotti/cannellini)",
+          "quantita": "250g",
+          "kcal": 300,
+          "carboidrati": 40,
+          "proteine": 18,
+          "grassi": 1.5
+        },
+        {
+          "nome": "Bietola o spinaci",
+          "quantita": "200g",
+          "kcal": 38,
+          "carboidrati": 4,
+          "proteine": 4,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 762,
+      "tipo_proteina": "legumi",
+      "consiglio": "Legumi cotti 250g come da piano (80g secchi). Fagioli scatola + bietola in padella con aglio e peperoncino."
+    },
+    {
+      "id": "cen_10",
+      "nome": "Alici al forno",
+      "tempo_minuti": 15,
+      "alimenti": [
+        {
+          "nome": "Alici fresche/surgelate",
+          "quantita": "200g",
+          "kcal": 186,
+          "carboidrati": 0,
+          "proteine": 32,
+          "grassi": 6
+        },
+        {
+          "nome": "Peperoni al forno",
+          "quantita": "250g",
+          "kcal": 56,
+          "carboidrati": 10,
+          "proteine": 2.5,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 666,
+      "tipo_proteina": "pesce",
+      "consiglio": "200g alici come da piano. A libro, pangrattato + prezzemolo, 10 min a 200°C. Economiche e ricche di omega-3."
+    },
+    {
+      "id": "cen_11",
+      "nome": "Sgombro + verdure",
+      "tempo_minuti": 15,
+      "alimenti": [
+        {
+          "nome": "Sgombro fresco o maccarello",
+          "quantita": "200g",
+          "kcal": 354,
+          "carboidrati": 0,
+          "proteine": 38,
+          "grassi": 22
+        },
+        {
+          "nome": "Insalata mista",
+          "quantita": "250g",
+          "kcal": 35,
+          "carboidrati": 5,
+          "proteine": 2.5,
+          "grassi": 0.3
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "10g (2 cucchiaini)",
+          "kcal": 90,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 10
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 768,
+      "tipo_proteina": "pesce",
+      "consiglio": "Sgombro ha molti grassi buoni, quindi meno olio. Al forno o alla piastra."
+    },
+    {
+      "id": "cen_12",
+      "nome": "Gamberi + verdure",
+      "tempo_minuti": 15,
+      "alimenti": [
+        {
+          "nome": "Gamberi",
+          "quantita": "300g",
+          "kcal": 270,
+          "carboidrati": 0,
+          "proteine": 60,
+          "grassi": 3
+        },
+        {
+          "nome": "Verdure miste saltate",
+          "quantita": "250g",
+          "kcal": 45,
+          "carboidrati": 7,
+          "proteine": 3,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 739,
+      "tipo_proteina": "pesce",
+      "consiglio": "Gamberi 300g come da piano. Surgelati vanno benissimo. Saltati con aglio e prezzemolo."
+    },
+    {
+      "id": "cen_13",
+      "nome": "Bresaola + contorno",
+      "tempo_minuti": 5,
+      "alimenti": [
+        {
+          "nome": "Bresaola",
+          "quantita": "120g",
+          "kcal": 180,
+          "carboidrati": 0,
+          "proteine": 40,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Rucola e parmigiano scaglie",
+          "quantita": "200g rucola + 10g parmigiano",
+          "kcal": 75,
+          "carboidrati": 5,
+          "proteine": 6,
+          "grassi": 3
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 679,
+      "tipo_proteina": "affettati",
+      "consiglio": "Bresaola 120g come da piano. Salva-cena velocissimo. Ma attenzione alle frequenze affettati (max 1-2/sett come secondo)."
+    },
+    {
+      "id": "cen_14",
+      "nome": "Seitan con verdure",
+      "tempo_minuti": 15,
+      "alimenti": [
+        {
+          "nome": "Seitan naturale (bocconcini/straccetti)",
+          "quantita": "200g",
+          "kcal": 250,
+          "carboidrati": 8,
+          "proteine": 46,
+          "grassi": 3
+        },
+        {
+          "nome": "Zucchine e peperoni",
+          "quantita": "250g",
+          "kcal": 45,
+          "carboidrati": 8,
+          "proteine": 2.5,
+          "grassi": 0.5
+        },
+        {
+          "nome": "Pane integrale",
+          "quantita": "100g",
+          "kcal": 234,
+          "carboidrati": 43,
+          "proteine": 8,
+          "grassi": 2.5
+        },
+        {
+          "nome": "Olio EVO",
+          "quantita": "15g (3 cucchiaini)",
+          "kcal": 135,
+          "carboidrati": 0,
+          "proteine": 0,
+          "grassi": 15
+        },
+        {
+          "nome": "Frutta fresca",
+          "quantita": "150g",
+          "kcal": 55,
+          "carboidrati": 13,
+          "proteine": 0.5,
+          "grassi": 0.2
+        }
+      ],
+      "kcal_totali": 719,
+      "tipo_proteina": "altro",
+      "consiglio": "200g seitan come da piano. Buona fonte di proteine. Condisci con salsa di soia o verdure."
+    }
+  ],
+  "frequenze_settimanali": {
+    "pesce": {
+      "min": 3,
+      "max": 4,
+      "nota": "Preferire pesce azzurro (sgombro, alici, salmone)"
+    },
+    "legumi": {
+      "min": 3,
+      "max": 4,
+      "nota": "Ceci, lenticchie, fagioli, hummus"
+    },
+    "carne_bianca": {
+      "min": 2,
+      "max": 3,
+      "nota": "Pollo, tacchino, coniglio"
+    },
+    "uova": {
+      "min": 0,
+      "max": 1,
+      "nota": "Se mangi tagliatelle o dolci con uova, salta il secondo con uova"
+    },
+    "formaggi": {
+      "min": 0,
+      "max": 2,
+      "nota": "Solo quelli nel piano: ricotta, mozzarella, fiocchi di latte. Max 2 se magri"
+    },
+    "affettati": {
+      "min": 0,
+      "max": 2,
+      "nota": "Se usati in 2-3 spuntini, non usarli come secondo"
+    },
+    "carne_rossa": {
+      "min": 0,
+      "max": 1,
+      "nota": "Ogni 10-15 giorni. Tagli magri."
+    }
+  },
+  "guida_olio": {
+    "misura": "1 cucchiaino = 5g = 45 kcal. 1 cucchiaio = 10g = 90 kcal. Misura SEMPRE, mai a occhio.",
+    "budget_giornaliero": {
+      "pranzo_g": 20,
+      "pranzo_cucchiaini": 4,
+      "cena_g": 15,
+      "cena_cucchiaini": 3,
+      "totale_g": 35,
+      "totale_kcal": 315
+    },
+    "cottura": {
+      "padella": "1-2 cucchiaini in padella antiaderente",
+      "piastra": "Spennella il cibo, non la piastra",
+      "forno": "Carta forno + spennellata leggera",
+      "soffritto": "NON fare soffritto classico. Fondo con verdure + acqua, poi aggiungi olio A CRUDO a fine cottura"
+    },
+    "attenzione": "L'olio EVO non va scaldato troppo. Se fuma = nutrienti persi + sostanze nocive. Evitare fritture."
+  },
+  "guida_sale": {
+    "limite_giornaliero_g": 1.5,
+    "equivalente": "circa 1/4 di cucchiaino raso",
+    "alternative": [
+      "curcuma",
+      "peperoncino",
+      "rosmarino",
+      "salvia",
+      "origano",
+      "basilico",
+      "prezzemolo",
+      "limone",
+      "aceto balsamico",
+      "aglio",
+      "cipolla"
+    ],
+    "sale_nascosto": [
+      "pane",
+      "affettati",
+      "formaggi",
+      "scatolette",
+      "dado da brodo"
+    ],
+    "acqua_pasta": "Sala normalmente (~7g/litro). Ne assorbi solo una piccola parte.",
+    "adattamento": "2-3 settimane per rieducare il palato. Dopo, i cibi salati sembreranno troppo."
+  },
+  "correzioni": [
+    {
+      "tipo": "errore",
+      "titolo": "Crema di nocciole",
+      "descrizione": "Deve essere 100% nocciole, senza zucchero, olio di palma o latte. Marche OK: Rigoni, Venchi 100%, Damiano."
+    },
+    {
+      "tipo": "errore",
+      "titolo": "Marmellata",
+      "descrizione": "Solo 'senza zuccheri aggiunti'. Marche OK: Rigoni Fiordifrutta, Zuegg senza zuccheri."
+    },
+    {
+      "tipo": "errore",
+      "titolo": "Tonno sott'olio",
+      "descrizione": "Passa al tonno al naturale. Differenza: ~80 kcal per scatoletta."
+    },
+    {
+      "tipo": "attenzione",
+      "titolo": "Pane colazione: 50g",
+      "descrizione": "Il piano dice 50g, non 60g. Corrisponde a circa 2 fette in cassetta o un panino piccolo."
+    },
+    {
+      "tipo": "attenzione",
+      "titolo": "Pane spuntino: 40g",
+      "descrizione": "40g = 1.5 fette in cassetta o un panino molto piccolo. NON una rosetta (80-100g)."
+    },
+    {
+      "tipo": "attenzione",
+      "titolo": "Pane cena: 100g integrale",
+      "descrizione": "A cena il piano prevede 100g di pane integrale (o 80g comune, o 300g patate, o 70g pasta/riso)."
+    },
+    {
+      "tipo": "attenzione",
+      "titolo": "Pasta: peso a crudo",
+      "descrizione": "100g di pasta cotta = solo ~45g secchi. Pesa SEMPRE prima di cuocere."
+    },
+    {
+      "tipo": "attenzione",
+      "titolo": "Olio: misura sempre",
+      "descrizione": "Versare a occhio aggiunge 100-200 kcal invisibili al giorno."
+    },
+    {
+      "tipo": "attenzione",
+      "titolo": "Cereali",
+      "descrizione": "Molti cereali sono pieni di zucchero. Scegli quelli con <10g zuccheri/100g o usa solo fiocchi d'avena."
+    },
+    {
+      "tipo": "attenzione",
+      "titolo": "Cena: porzioni più grandi",
+      "descrizione": "A cena le proteine sono il doppio del pranzo (es. pollo 200g, non 100g). Il pane sale a 100g. È il pasto principale proteico."
+    }
+  ],
+  "strategia_weekend": [
+    "Regola 80/20: 5 giorni su 7 segui il piano. Weekend: un pasto libero, non un giorno libero.",
+    "Aperitivo: 1 bicchiere di vino (125 kcal) o 1 spritz (150 kcal). EVITA stuzzichini e patatine (300-500 kcal nascoste).",
+    "Pasto fuori: scegli piatto unico (pesce/carne + verdure). Evita antipasto + primo + secondo.",
+    "Dopo lo sgarro riprendi normalmente. MAI saltare il pasto successivo per compensare.",
+    "Batch cooking domenica: cuoci 2-3 cene per la settimana. Metti in frigo in contenitori."
+  ],
+  "piano_settimanale": [
+    {
+      "giorno": "Lunedì",
+      "emoji": "1️⃣",
+      "pasti": {
+        "colazione": {
+          "ref": "col_1",
+          "nome": "Pane + crema di nocciole",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "50g",
+              "kcal": 117,
+              "carboidrati": 22,
+              "proteine": 4,
+              "grassi": 1.2
+            },
+            {
+              "nome": "Crema 100% nocciole",
+              "quantita": "2 cucchiaini",
+              "kcal": 76,
+              "carboidrati": 1.5,
+              "proteine": 2.4,
+              "grassi": 7
+            },
+            {
+              "nome": "Banana",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        },
+        "spuntino_mattina": {
+          "ref": "spm_1",
+          "nome": "Panino + prosciutto cotto",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "40g",
+              "kcal": 94,
+              "carboidrati": 17,
+              "proteine": 3.2,
+              "grassi": 1
+            },
+            {
+              "nome": "Prosciutto cotto sgrassato",
+              "quantita": "2 fette (40g)",
+              "kcal": 46,
+              "carboidrati": 0.5,
+              "proteine": 7,
+              "grassi": 2
+            }
+          ]
+        },
+        "pranzo": {
+          "ref": "pra_1",
+          "nome": "Pasta + sgombro",
+          "alimenti": [
+            {
+              "nome": "Pasta integrale",
+              "quantita": "100g",
+              "kcal": 348,
+              "carboidrati": 66,
+              "proteine": 13,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Sgombro al naturale",
+              "quantita": "100g",
+              "kcal": 177,
+              "carboidrati": 0,
+              "proteine": 19,
+              "grassi": 11
+            },
+            {
+              "nome": "Verdure miste",
+              "quantita": "200g",
+              "kcal": 40,
+              "carboidrati": 7,
+              "proteine": 3,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "20g (4 cucchiaini)",
+              "kcal": 180,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 20
+            },
+            {
+              "nome": "Mela",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.3,
+              "grassi": 0.2
+            }
+          ]
+        },
+        "spuntino_pomeriggio": {
+          "ref": "spp_1",
+          "nome": "Pane + frutta secca",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "40g",
+              "kcal": 94,
+              "carboidrati": 17,
+              "proteine": 3.2,
+              "grassi": 1
+            },
+            {
+              "nome": "Frutta secca mista",
+              "quantita": "15g",
+              "kcal": 90,
+              "carboidrati": 2,
+              "proteine": 3,
+              "grassi": 8
+            }
+          ]
+        },
+        "cena": {
+          "ref": "cen_1",
+          "nome": "Pollo alla piastra",
+          "alimenti": [
+            {
+              "nome": "Petto di pollo",
+              "quantita": "200g",
+              "kcal": 220,
+              "carboidrati": 0,
+              "proteine": 46,
+              "grassi": 3
+            },
+            {
+              "nome": "Zucchine grigliate",
+              "quantita": "250g",
+              "kcal": 28,
+              "carboidrati": 4,
+              "proteine": 2.5,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Pane integrale",
+              "quantita": "100g",
+              "kcal": 234,
+              "carboidrati": 43,
+              "proteine": 8,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "15g (3 cucchiaini)",
+              "kcal": 135,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 15
+            },
+            {
+              "nome": "Frutta fresca",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        }
+      },
+      "note": "Pesce a pranzo + carne bianca a cena"
+    },
+    {
+      "giorno": "Martedì",
+      "emoji": "2️⃣",
+      "pasti": {
+        "colazione": {
+          "ref": "col_3",
+          "nome": "Yogurt + avena + frutto",
+          "alimenti": [
+            {
+              "nome": "Yogurt naturale",
+              "quantita": "125g",
+              "kcal": 50,
+              "carboidrati": 5,
+              "proteine": 6.5,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Fiocchi d'avena",
+              "quantita": "40g",
+              "kcal": 152,
+              "carboidrati": 26,
+              "proteine": 5,
+              "grassi": 3
+            },
+            {
+              "nome": "Mirtilli",
+              "quantita": "100g",
+              "kcal": 36,
+              "carboidrati": 8,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        },
+        "spuntino_mattina": {
+          "ref": "spm_2",
+          "nome": "Panino + tonno",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "40g",
+              "kcal": 94,
+              "carboidrati": 17,
+              "proteine": 3.2,
+              "grassi": 1
+            },
+            {
+              "nome": "Tonno al naturale",
+              "quantita": "50g",
+              "kcal": 55,
+              "carboidrati": 0,
+              "proteine": 13,
+              "grassi": 0.5
+            }
+          ]
+        },
+        "pranzo": {
+          "ref": "pra_4",
+          "nome": "Pasta + hummus",
+          "alimenti": [
+            {
+              "nome": "Pasta integrale",
+              "quantita": "100g",
+              "kcal": 348,
+              "carboidrati": 66,
+              "proteine": 13,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Hummus di ceci",
+              "quantita": "100g",
+              "kcal": 175,
+              "carboidrati": 12,
+              "proteine": 7.5,
+              "grassi": 10
+            },
+            {
+              "nome": "Insalata mista",
+              "quantita": "200g",
+              "kcal": 30,
+              "carboidrati": 4,
+              "proteine": 2,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "20g (4 cucchiaini)",
+              "kcal": 180,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 20
+            },
+            {
+              "nome": "Pera",
+              "quantita": "150g",
+              "kcal": 52,
+              "carboidrati": 12,
+              "proteine": 0.3,
+              "grassi": 0.1
+            }
+          ]
+        },
+        "spuntino_pomeriggio": {
+          "ref": "spp_1",
+          "nome": "Pane + frutta secca",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "40g",
+              "kcal": 94,
+              "carboidrati": 17,
+              "proteine": 3.2,
+              "grassi": 1
+            },
+            {
+              "nome": "Frutta secca",
+              "quantita": "15g",
+              "kcal": 90,
+              "carboidrati": 2,
+              "proteine": 3,
+              "grassi": 8
+            }
+          ]
+        },
+        "cena": {
+          "ref": "cen_3",
+          "nome": "Frittata di verdure",
+          "alimenti": [
+            {
+              "nome": "Uova",
+              "quantita": "3 uova (150g)",
+              "kcal": 234,
+              "carboidrati": 1.5,
+              "proteine": 19.5,
+              "grassi": 16.5
+            },
+            {
+              "nome": "Spinaci",
+              "quantita": "200g",
+              "kcal": 46,
+              "carboidrati": 4,
+              "proteine": 6,
+              "grassi": 0.8
+            },
+            {
+              "nome": "Patate lesse",
+              "quantita": "300g",
+              "kcal": 240,
+              "carboidrati": 52,
+              "proteine": 6,
+              "grassi": 0.4
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "15g (3 cucchiaini)",
+              "kcal": 135,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 15
+            },
+            {
+              "nome": "Frutta fresca",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        }
+      },
+      "note": "Legumi a pranzo + uova a cena. Uova max 1 volta/settimana!"
+    },
+    {
+      "giorno": "Mercoledì",
+      "emoji": "3️⃣",
+      "pasti": {
+        "colazione": {
+          "ref": "col_2",
+          "nome": "Pane + burro d'arachidi",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "50g",
+              "kcal": 117,
+              "carboidrati": 22,
+              "proteine": 4,
+              "grassi": 1.2
+            },
+            {
+              "nome": "Burro di arachidi 100%",
+              "quantita": "2 cucchiaini",
+              "kcal": 70,
+              "carboidrati": 1.2,
+              "proteine": 3,
+              "grassi": 6
+            },
+            {
+              "nome": "Marmellata senza zuccheri",
+              "quantita": "2 cucchiaini",
+              "kcal": 18,
+              "carboidrati": 4,
+              "proteine": 0,
+              "grassi": 0
+            },
+            {
+              "nome": "Kiwi",
+              "quantita": "150g",
+              "kcal": 65,
+              "carboidrati": 14,
+              "proteine": 1.2,
+              "grassi": 0.5
+            }
+          ]
+        },
+        "spuntino_mattina": {
+          "ref": "spm_3",
+          "nome": "Panino + bresaola",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "40g",
+              "kcal": 94,
+              "carboidrati": 17,
+              "proteine": 3.2,
+              "grassi": 1
+            },
+            {
+              "nome": "Bresaola",
+              "quantita": "2-3 fette (30g)",
+              "kcal": 45,
+              "carboidrati": 0,
+              "proteine": 10,
+              "grassi": 0.7
+            }
+          ]
+        },
+        "pranzo": {
+          "ref": "pra_3",
+          "nome": "Pasta + ricotta e pomodorini",
+          "alimenti": [
+            {
+              "nome": "Pasta integrale",
+              "quantita": "100g",
+              "kcal": 348,
+              "carboidrati": 66,
+              "proteine": 13,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Ricotta vaccina",
+              "quantita": "100g",
+              "kcal": 138,
+              "carboidrati": 4,
+              "proteine": 8,
+              "grassi": 10
+            },
+            {
+              "nome": "Pomodorini",
+              "quantita": "150g",
+              "kcal": 27,
+              "carboidrati": 5,
+              "proteine": 1.5,
+              "grassi": 0.3
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "20g (4 cucchiaini)",
+              "kcal": 180,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 20
+            }
+          ]
+        },
+        "spuntino_pomeriggio": {
+          "ref": "spp_1",
+          "nome": "Crackers + frutta secca",
+          "alimenti": [
+            {
+              "nome": "Crackers integrali",
+              "quantita": "1 pacchetto (30g)",
+              "kcal": 120,
+              "carboidrati": 20,
+              "proteine": 3,
+              "grassi": 3
+            },
+            {
+              "nome": "Frutta secca",
+              "quantita": "15g",
+              "kcal": 90,
+              "carboidrati": 2,
+              "proteine": 3,
+              "grassi": 8
+            }
+          ]
+        },
+        "cena": {
+          "ref": "cen_2",
+          "nome": "Merluzzo al forno",
+          "alimenti": [
+            {
+              "nome": "Filetto di merluzzo",
+              "quantita": "250g",
+              "kcal": 203,
+              "carboidrati": 0,
+              "proteine": 45,
+              "grassi": 2
+            },
+            {
+              "nome": "Cavolfiore al vapore",
+              "quantita": "250g",
+              "kcal": 55,
+              "carboidrati": 8,
+              "proteine": 5,
+              "grassi": 0.7
+            },
+            {
+              "nome": "Pane integrale",
+              "quantita": "100g",
+              "kcal": 234,
+              "carboidrati": 43,
+              "proteine": 8,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "15g (3 cucchiaini)",
+              "kcal": 135,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 15
+            },
+            {
+              "nome": "Frutta fresca",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        }
+      },
+      "note": "Formaggio a pranzo + pesce a cena"
+    },
+    {
+      "giorno": "Giovedì",
+      "emoji": "4️⃣",
+      "pasti": {
+        "colazione": {
+          "ref": "col_3",
+          "nome": "Yogurt + avena + frutto",
+          "alimenti": [
+            {
+              "nome": "Yogurt naturale",
+              "quantita": "125g",
+              "kcal": 50,
+              "carboidrati": 5,
+              "proteine": 6.5,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Fiocchi d'avena",
+              "quantita": "40g",
+              "kcal": 152,
+              "carboidrati": 26,
+              "proteine": 5,
+              "grassi": 3
+            },
+            {
+              "nome": "Fragole",
+              "quantita": "100g",
+              "kcal": 32,
+              "carboidrati": 7,
+              "proteine": 0.7,
+              "grassi": 0.3
+            }
+          ]
+        },
+        "spuntino_mattina": {
+          "ref": "spm_2",
+          "nome": "Panino + tonno",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "40g",
+              "kcal": 94,
+              "carboidrati": 17,
+              "proteine": 3.2,
+              "grassi": 1
+            },
+            {
+              "nome": "Tonno al naturale",
+              "quantita": "50g",
+              "kcal": 55,
+              "carboidrati": 0,
+              "proteine": 13,
+              "grassi": 0.5
+            }
+          ]
+        },
+        "pranzo": {
+          "ref": "pra_2",
+          "nome": "Pasta + tonno",
+          "alimenti": [
+            {
+              "nome": "Pasta integrale",
+              "quantita": "100g",
+              "kcal": 348,
+              "carboidrati": 66,
+              "proteine": 13,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Tonno al naturale",
+              "quantita": "100g",
+              "kcal": 103,
+              "carboidrati": 0,
+              "proteine": 23,
+              "grassi": 1
+            },
+            {
+              "nome": "Verdure grigliate",
+              "quantita": "200g",
+              "kcal": 45,
+              "carboidrati": 7,
+              "proteine": 3,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "20g (4 cucchiaini)",
+              "kcal": 180,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 20
+            },
+            {
+              "nome": "Arancia",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        },
+        "spuntino_pomeriggio": {
+          "ref": "spp_4",
+          "nome": "Yogurt + frutta secca",
+          "alimenti": [
+            {
+              "nome": "Yogurt naturale",
+              "quantita": "125g",
+              "kcal": 50,
+              "carboidrati": 5,
+              "proteine": 6.5,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Frutta secca",
+              "quantita": "15g",
+              "kcal": 90,
+              "carboidrati": 2,
+              "proteine": 3,
+              "grassi": 8
+            }
+          ]
+        },
+        "cena": {
+          "ref": "cen_4",
+          "nome": "Ceci con verdure",
+          "alimenti": [
+            {
+              "nome": "Ceci cotti",
+              "quantita": "250g",
+              "kcal": 300,
+              "carboidrati": 37,
+              "proteine": 20,
+              "grassi": 6
+            },
+            {
+              "nome": "Carote e sedano",
+              "quantita": "200g",
+              "kcal": 45,
+              "carboidrati": 8,
+              "proteine": 2,
+              "grassi": 0.3
+            },
+            {
+              "nome": "Pane integrale",
+              "quantita": "100g",
+              "kcal": 234,
+              "carboidrati": 43,
+              "proteine": 8,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "15g (3 cucchiaini)",
+              "kcal": 135,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 15
+            },
+            {
+              "nome": "Frutta fresca",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        }
+      },
+      "note": "Pesce a pranzo + legumi a cena"
+    },
+    {
+      "giorno": "Venerdì",
+      "emoji": "5️⃣",
+      "pasti": {
+        "colazione": {
+          "ref": "col_1",
+          "nome": "Pane + crema di nocciole",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "50g",
+              "kcal": 117,
+              "carboidrati": 22,
+              "proteine": 4,
+              "grassi": 1.2
+            },
+            {
+              "nome": "Crema 100% nocciole",
+              "quantita": "2 cucchiaini",
+              "kcal": 76,
+              "carboidrati": 1.5,
+              "proteine": 2.4,
+              "grassi": 7
+            },
+            {
+              "nome": "Banana",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        },
+        "spuntino_mattina": {
+          "ref": "spm_1",
+          "nome": "Panino + prosciutto cotto",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "40g",
+              "kcal": 94,
+              "carboidrati": 17,
+              "proteine": 3.2,
+              "grassi": 1
+            },
+            {
+              "nome": "Prosciutto cotto sgrassato",
+              "quantita": "2 fette (40g)",
+              "kcal": 46,
+              "carboidrati": 0.5,
+              "proteine": 7,
+              "grassi": 2
+            }
+          ]
+        },
+        "pranzo": {
+          "ref": "pra_5",
+          "nome": "Riso + parmigiano",
+          "alimenti": [
+            {
+              "nome": "Riso basmati integrale",
+              "quantita": "100g",
+              "kcal": 350,
+              "carboidrati": 72,
+              "proteine": 8,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Parmigiano Reggiano",
+              "quantita": "30g",
+              "kcal": 118,
+              "carboidrati": 0,
+              "proteine": 10,
+              "grassi": 8.5
+            },
+            {
+              "nome": "Rucola e pomodorini",
+              "quantita": "200g",
+              "kcal": 30,
+              "carboidrati": 5,
+              "proteine": 2.5,
+              "grassi": 0.3
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "20g (4 cucchiaini)",
+              "kcal": 180,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 20
+            },
+            {
+              "nome": "Mela",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.3,
+              "grassi": 0.2
+            }
+          ]
+        },
+        "spuntino_pomeriggio": {
+          "ref": "spp_1",
+          "nome": "Wasa + frutta secca",
+          "alimenti": [
+            {
+              "nome": "Wasa integrali",
+              "quantita": "3 fette",
+              "kcal": 105,
+              "carboidrati": 20,
+              "proteine": 3,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Frutta secca",
+              "quantita": "15g",
+              "kcal": 90,
+              "carboidrati": 2,
+              "proteine": 3,
+              "grassi": 8
+            }
+          ]
+        },
+        "cena": {
+          "ref": "cen_5",
+          "nome": "Salmone al forno",
+          "alimenti": [
+            {
+              "nome": "Salmone fresco",
+              "quantita": "200g",
+              "kcal": 384,
+              "carboidrati": 0,
+              "proteine": 40,
+              "grassi": 24
+            },
+            {
+              "nome": "Broccoli al vapore",
+              "quantita": "250g",
+              "kcal": 60,
+              "carboidrati": 8,
+              "proteine": 7,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Pane integrale",
+              "quantita": "100g",
+              "kcal": 234,
+              "carboidrati": 43,
+              "proteine": 8,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "10g (2 cucchiaini)",
+              "kcal": 90,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 10
+            },
+            {
+              "nome": "Frutta fresca",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        }
+      },
+      "note": "Formaggio a pranzo + pesce a cena. Salmone = meno olio."
+    },
+    {
+      "giorno": "Sabato",
+      "emoji": "🟠",
+      "weekend": true,
+      "pasti": {
+        "colazione": {
+          "ref": "col_3",
+          "nome": "Yogurt + avena + frutto",
+          "alimenti": [
+            {
+              "nome": "Yogurt naturale",
+              "quantita": "125g",
+              "kcal": 50,
+              "carboidrati": 5,
+              "proteine": 6.5,
+              "grassi": 0.5
+            },
+            {
+              "nome": "Fiocchi d'avena",
+              "quantita": "40g",
+              "kcal": 152,
+              "carboidrati": 26,
+              "proteine": 5,
+              "grassi": 3
+            },
+            {
+              "nome": "Frutti di bosco",
+              "quantita": "100g",
+              "kcal": 40,
+              "carboidrati": 9,
+              "proteine": 0.8,
+              "grassi": 0.3
+            }
+          ]
+        },
+        "spuntino_mattina": {
+          "ref": "spp_1",
+          "nome": "Frutta secca + frutto",
+          "alimenti": [
+            {
+              "nome": "Frutta secca mista",
+              "quantita": "15g",
+              "kcal": 90,
+              "carboidrati": 2,
+              "proteine": 3,
+              "grassi": 8
+            },
+            {
+              "nome": "Frutto di stagione",
+              "quantita": "100g",
+              "kcal": 40,
+              "carboidrati": 10,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        },
+        "pranzo": {
+          "nome": "Pasto fuori / libero",
+          "alimenti": [
+            {
+              "nome": "Piatto unico (carne/pesce + verdure + carboidrato)",
+              "quantita": "—",
+              "kcal": 700,
+              "carboidrati": 65,
+              "proteine": 35,
+              "grassi": 25
+            }
+          ],
+          "nota_speciale": "Se mangi fuori: piatto unico, evita antipasto+primo+secondo."
+        },
+        "cena": {
+          "ref": "cen_6",
+          "nome": "Vellutata + ricotta (leggera)",
+          "alimenti": [
+            {
+              "nome": "Vellutata di zucca",
+              "quantita": "300g",
+              "kcal": 105,
+              "carboidrati": 16,
+              "proteine": 3,
+              "grassi": 3
+            },
+            {
+              "nome": "Ricotta",
+              "quantita": "150g",
+              "kcal": 207,
+              "carboidrati": 6,
+              "proteine": 12,
+              "grassi": 15
+            },
+            {
+              "nome": "Crostini integrali",
+              "quantita": "80g",
+              "kcal": 187,
+              "carboidrati": 35,
+              "proteine": 6.5,
+              "grassi": 2
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "10g (2 cucchiaini)",
+              "kcal": 90,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 10
+            },
+            {
+              "nome": "Frutta fresca",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        }
+      },
+      "note": "Pranzo libero → cena leggera. Se aperitivo (1 bicchiere = 125 kcal), riduci i crostini."
+    },
+    {
+      "giorno": "Domenica",
+      "emoji": "🔴",
+      "weekend": true,
+      "pasti": {
+        "colazione": {
+          "ref": "col_6",
+          "nome": "Brunch",
+          "alimenti": [
+            {
+              "nome": "Pane integrale tostato",
+              "quantita": "50g",
+              "kcal": 117,
+              "carboidrati": 22,
+              "proteine": 4,
+              "grassi": 1.2
+            },
+            {
+              "nome": "Uovo strapazzato",
+              "quantita": "1 uovo",
+              "kcal": 78,
+              "carboidrati": 0.5,
+              "proteine": 6.5,
+              "grassi": 5.5
+            },
+            {
+              "nome": "Avocado",
+              "quantita": "50g",
+              "kcal": 80,
+              "carboidrati": 1,
+              "proteine": 1,
+              "grassi": 7.5
+            },
+            {
+              "nome": "Pomodorini",
+              "quantita": "80g",
+              "kcal": 14,
+              "carboidrati": 3,
+              "proteine": 0.7,
+              "grassi": 0.1
+            }
+          ]
+        },
+        "spuntino_mattina": {
+          "nome": "Frutta fresca",
+          "alimenti": [
+            {
+              "nome": "Frutta fresca di stagione",
+              "quantita": "150g",
+              "kcal": 60,
+              "carboidrati": 14,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        },
+        "pranzo": {
+          "ref": "pra_6",
+          "nome": "Pasta e lenticchie",
+          "alimenti": [
+            {
+              "nome": "Pasta integrale",
+              "quantita": "80g",
+              "kcal": 278,
+              "carboidrati": 53,
+              "proteine": 10,
+              "grassi": 2
+            },
+            {
+              "nome": "Lenticchie cotte",
+              "quantita": "150g",
+              "kcal": 150,
+              "carboidrati": 18,
+              "proteine": 10,
+              "grassi": 1
+            },
+            {
+              "nome": "Verdure",
+              "quantita": "100g",
+              "kcal": 30,
+              "carboidrati": 5,
+              "proteine": 1,
+              "grassi": 0.2
+            },
+            {
+              "nome": "Parmigiano grattugiato",
+              "quantita": "10g",
+              "kcal": 39,
+              "carboidrati": 0,
+              "proteine": 3.5,
+              "grassi": 2.8
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "20g (4 cucchiaini)",
+              "kcal": 180,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 20
+            }
+          ]
+        },
+        "spuntino_pomeriggio": {
+          "nome": "Pane + frutta secca",
+          "alimenti": [
+            {
+              "nome": "Pane integrale",
+              "quantita": "40g",
+              "kcal": 94,
+              "carboidrati": 17,
+              "proteine": 3.2,
+              "grassi": 1
+            },
+            {
+              "nome": "Frutta secca",
+              "quantita": "15g",
+              "kcal": 90,
+              "carboidrati": 2,
+              "proteine": 3,
+              "grassi": 8
+            }
+          ]
+        },
+        "cena": {
+          "ref": "cen_7",
+          "nome": "Minestrone + mozzarella",
+          "alimenti": [
+            {
+              "nome": "Minestrone",
+              "quantita": "350g",
+              "kcal": 105,
+              "carboidrati": 16,
+              "proteine": 4,
+              "grassi": 2
+            },
+            {
+              "nome": "Mozzarella di vacca",
+              "quantita": "150g",
+              "kcal": 380,
+              "carboidrati": 1.5,
+              "proteine": 27,
+              "grassi": 28.5
+            },
+            {
+              "nome": "Pane integrale",
+              "quantita": "100g",
+              "kcal": 234,
+              "carboidrati": 43,
+              "proteine": 8,
+              "grassi": 2.5
+            },
+            {
+              "nome": "Olio EVO",
+              "quantita": "10g (2 cucchiaini)",
+              "kcal": 90,
+              "carboidrati": 0,
+              "proteine": 0,
+              "grassi": 10
+            },
+            {
+              "nome": "Frutta fresca",
+              "quantita": "150g",
+              "kcal": 55,
+              "carboidrati": 13,
+              "proteine": 0.5,
+              "grassi": 0.2
+            }
+          ]
+        }
+      },
+      "note": "Batch cooking: prepara 2-3 cene per la settimana!"
+    }
+  ]
+}

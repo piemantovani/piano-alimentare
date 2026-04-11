@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Cosa mangio?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #0f172a;
+    --bg-mid: #1e293b;
+    --bg-card: rgba(255,255,255,0.03);
+    --border: rgba(255,255,255,0.06);
+    --text: #e2e8f0;
+    --text-dim: #94a3b8;
+    --text-muted: #64748b;
+    --text-dark: #475569;
+    --col-yellow: #F59E0B;
+    --col-purple: #8B5CF6;
+    --col-blue: #3B82F6;
+    --col-indigo: #6366F1;
+    --col-green: #10B981;
+    --col-red: #EF4444;
+    --col-pink: #f472b6;
+    --col-teal: #14b8a6;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(135deg, var(--bg-deep) 0%, var(--bg-mid) 50%, var(--bg-deep) 100%);
+    color: var(--text);
+    min-height: 100vh;
+    min-height: 100dvh;
+    max-width: 480px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  .header {
+    padding: 28px 20px 12px;
+    background: linear-gradient(180deg, rgba(59,130,246,0.12) 0%, transparent 100%);
+  }
+  .header h1 {
+    font: 800 26px/1.1 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .header p { font-size: 12px; color: var(--text-muted); margin-top: 5px; }
+
+  /* Tabs */
+  .tabs {
+    display: flex; gap: 5px; padding: 10px 14px 14px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    flex: 0 0 auto; padding: 9px 13px; border-radius: 12px;
+    border: none; font: 600 12px 'DM Sans'; cursor: pointer;
+    background: rgba(255,255,255,0.04); color: var(--text-muted);
+    transition: all 0.2s;
+  }
+  .tab-btn.active {
+    box-shadow: 0 0 0 1px var(--tab-color, #3B82F6);
+    background: color-mix(in srgb, var(--tab-color, #3B82F6) 14%, transparent);
+    color: var(--tab-color, #3B82F6);
+  }
+
+  /* Content */
+  .content { padding: 0 16px 90px; }
+  .section-hint { font-size: 11px; color: var(--text-dark); margin-bottom: 12px; line-height: 1.45; }
+
+  /* Card */
+  .card {
+    background: var(--bg-card); border-radius: 16px; margin-bottom: 10px;
+    border: 1px solid var(--border); overflow: hidden; transition: border-color 0.2s;
+  }
+  .card.open { border-color: color-mix(in srgb, var(--accent, #3B82F6) 30%, transparent); }
+  .card-header {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 16px; background: none; border: none; cursor: pointer;
+    color: var(--text); gap: 10px; text-align: left; font-family: inherit;
+  }
+  .card-title { font: 700 14px 'DM Sans'; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .card-sub { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+  .card-sub .kcal-val { font-weight: 700; color: var(--accent, #3B82F6); }
+  .badge {
+    font-size: 9px; padding: 2px 7px; border-radius: 6px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.3px;
+  }
+  .badge-weekend { background: rgba(251,191,36,0.15); color: #fbbf24; }
+  .badge-time { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+  .badge-freq { background: rgba(239,68,68,0.15); color: #fca5a5; }
+  .chevron {
+    font-size: 18px; color: var(--text-dark);
+    transition: transform 0.2s; flex-shrink: 0;
+  }
+  .card.open .chevron { transform: rotate(180deg); }
+
+  .card-body { padding: 0 16px 14px; display: none; }
+  .card.open .card-body { display: block; }
+
+  .food-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 7px 0;
+  }
+  .food-row + .food-row { border-top: 1px solid rgba(255,255,255,0.04); }
+  .food-name { font: 500 13px 'DM Sans'; }
+  .food-qty { font-size: 11px; color: var(--text-muted); }
+  .food-kcal { text-align: right; font-size: 12px; min-width: 75px; color: var(--text-dim); }
+  .food-kcal strong { color: #cbd5e1; }
+
+  .tip {
+    margin-top: 10px; padding: 10px 12px;
+    border-radius: 10px; font-size: 11px; color: var(--text-dim); line-height: 1.5;
+    border-left: 3px solid color-mix(in srgb, var(--accent, #3B82F6) 30%, transparent);
+    background: color-mix(in srgb, var(--accent, #3B82F6) 6%, transparent);
+  }
+
+  /* Guide section */
+  .guide-title {
+    font: 800 15px/1.3 'Nunito', sans-serif;
+    margin: 8px 0 10px;
+  }
+  .freq-table { background: var(--bg-card); border-radius: 16px; overflow: hidden; margin-bottom: 20px; }
+  .freq-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 16px;
+  }
+  .freq-row + .freq-row { border-top: 1px solid rgba(255,255,255,0.04); }
+  .freq-row span:first-child { font-size: 12px; color: #cbd5e1; }
+  .freq-badge {
+    font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 6px;
+    white-space: nowrap;
+  }
+  .info-card {
+    background: var(--bg-card); border-radius: 14px; padding: 12px 16px;
+    margin-bottom: 8px; font-size: 11px; color: var(--text-dim); line-height: 1.5;
+  }
+  .info-card .info-title { font: 700 13px 'DM Sans'; color: var(--text); margin-bottom: 3px; }
+  .tip-card {
+    background: var(--bg-card); border-radius: 12px; padding: 10px 14px;
+    margin-bottom: 6px; font-size: 11px; color: var(--text-dim); line-height: 1.5;
+  }
+  .tip-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 18px; height: 18px; border-radius: 5px; font-size: 10px; font-weight: 800;
+    margin-right: 8px;
+  }
+
+  /* Animations */
+  @keyframes fadeIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+  .card { animation: fadeIn 0.3s ease both; }
+  .card:nth-child(2) { animation-delay: 0.03s; }
+  .card:nth-child(3) { animation-delay: 0.06s; }
+  .card:nth-child(4) { animation-delay: 0.09s; }
+  .card:nth-child(5) { animation-delay: 0.12s; }
+
+  .loading { text-align: center; padding: 60px 20px; color: var(--text-muted); font-size: 14px; }
+
+  /* Weekly view */
+  .day-selector {
+    display: flex; gap: 6px; overflow-x: auto; padding-bottom: 12px;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .day-selector::-webkit-scrollbar { display: none; }
+  .day-btn {
+    flex: 0 0 auto; padding: 10px 14px; border-radius: 14px;
+    border: 1px solid var(--border); background: var(--bg-card);
+    color: var(--text-muted); font: 500 13px 'DM Sans'; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .day-btn.active { border-color: #60a5fa; background: rgba(59,130,246,0.15); color: #60a5fa; font-weight: 700; }
+  .day-btn.weekend { background: rgba(239,68,68,0.06); }
+  .day-btn.weekend.active { border-color: #f87171; background: rgba(239,68,68,0.15); color: #f87171; }
+
+  .day-totals {
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; margin-bottom: 16px;
+  }
+  .day-total-box {
+    background: var(--bg-card); border-radius: 14px; padding: 10px 8px; text-align: center;
+  }
+  .day-total-val { font: 800 18px/1 'Nunito'; }
+  .day-total-label { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .day-total-bar { height: 3px; background: rgba(255,255,255,0.06); border-radius: 2px; margin-top: 6px; overflow: hidden; }
+  .day-total-fill { height: 100%; border-radius: 2px; transition: width 0.4s ease; }
+
+  .meal-label {
+    font: 600 11px 'DM Sans'; text-transform: uppercase; letter-spacing: 0.8px;
+    color: var(--text-dark); margin: 14px 0 6px; padding-left: 2px;
+  }
+  .day-note {
+    font-size: 11px; color: var(--text-dim); padding: 10px 14px;
+    background: rgba(99,102,241,0.06); border-radius: 12px; margin-top: 12px;
+    border-left: 3px solid rgba(99,102,241,0.3); line-height: 1.5;
+  }
+  .special-note {
+    font-size: 11px; color: #fbbf24; padding: 8px 12px;
+    background: rgba(251,191,36,0.08); border-radius: 10px; margin-top: 6px;
+    border-left: 3px solid rgba(251,191,36,0.3); line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Cosa mangio?</h1>
+  <p>Scegli in base a cosa hai · Target 1.800 kcal</p>
+</div>
+
+<div class="tabs" id="tabs"></div>
+<div class="content" id="content">
+  <div class="loading">Caricamento...</div>
+</div>
+
+<script>
+const TABS = [
+  { id:"settimana", label:"Settimana", icon:"📅", color:"#14b8a6", hint:"Piano settimanale tipo. Tap su ogni pasto per i dettagli." },
+  { id:"colazione", label:"Colazione", icon:"☀️", color:"#F59E0B", hint:"Alterna tra queste opzioni. Cambia il frutto in base alla stagione." },
+  { id:"spuntino", label:"Spuntino", icon:"🍎", color:"#8B5CF6", hint:"Metà mattina o pomeriggio. Il panino deve essere piccolo (50g)!" },
+  { id:"pranzo", label:"Pranzo", icon:"🍝", color:"#3B82F6", hint:"Primo 100g (peso a crudo!) + secondo + verdure + olio. Tap per dettagli." },
+  { id:"cena", label:"Cena", icon:"🌙", color:"#6366F1", hint:"Tutte veloci. Per 2 persone raddoppia i pesi. Tap per dettagli." },
+  { id:"guide", label:"Guide", icon:"📖", color:"#10B981", hint:"" },
+];
+
+let data = null;
+let activeTab = "settimana";
+let openCards = {};
+let selectedDay = 0;
+
+// Load JSON - tries same folder first
+async function loadData() {
+  try {
+    const r = await fetch("piano_alimentare.json");
+    if (!r.ok) throw new Error();
+    data = await r.json();
+  } catch {
+    try {
+      const r2 = await fetch("./piano_alimentare.json");
+      if (!r2.ok) throw new Error();
+      data = await r2.json();
+    } catch {
+      document.getElementById("content").innerHTML =
+        '<div class="loading">Errore: piano_alimentare.json non trovato.<br>Assicurati che sia nella stessa cartella.</div>';
+      return;
+    }
+  }
+  renderTabs();
+  render();
+}
+
+function renderTabs() {
+  const el = document.getElementById("tabs");
+  el.innerHTML = TABS.map(t =>
+    `<button class="tab-btn ${activeTab===t.id?'active':''}" data-tab="${t.id}" style="--tab-color:${t.color}">${t.icon} ${t.label}</button>`
+  ).join("");
+  el.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.onclick = () => { activeTab = btn.dataset.tab; openCards = {}; renderTabs(); render(); };
+  });
+}
+
+function getItems(tabId) {
+  if (!data) return [];
+  const map = { colazione:"colazioni", spuntino:"spuntini_mattina", pranzo:"pranzi", cena:"cene" };
+  return data[map[tabId]] || [];
+}
+
+function sumKcal(items) { return items.reduce((s,i) => s + i.kcal, 0); }
+
+function render() {
+  const el = document.getElementById("content");
+  const tab = TABS.find(t => t.id === activeTab);
+  if (!tab || !data) return;
+
+  if (activeTab === "settimana") {
+    el.innerHTML = renderWeek();
+    return;
+  }
+
+  if (activeTab === "guide") {
+    el.innerHTML = renderGuide();
+    return;
+  }
+
+  const items = getItems(activeTab);
+  let html = `<p class="section-hint">${tab.hint}</p>`;
+
+  items.forEach((opt, i) => {
+    const key = `${activeTab}-${i}`;
+    const isOpen = !!openCards[key];
+    const ali = opt.alimenti;
+    const tot = sumKcal(ali);
+    const c = ali.reduce((s,a)=>s+a.carboidrati,0);
+    const p = ali.reduce((s,a)=>s+a.proteine,0);
+    const f = ali.reduce((s,a)=>s+a.grassi,0);
+
+    let badges = "";
+    if (opt.tag) badges += `<span class="badge badge-weekend">${opt.tag}</span>`;
+    if (opt.tempo_minuti) badges += `<span class="badge badge-time">⏱ ${opt.tempo_minuti} min</span>`;
+    if (opt.frequenza_max) badges += `<span class="badge badge-freq">${opt.frequenza_max}</span>`;
+
+    html += `
+      <div class="card ${isOpen?'open':''}" style="--accent:${tab.color}" data-key="${key}">
+        <button class="card-header" onclick="toggle('${key}')">
+          <div style="flex:1">
+            <div class="card-title">${opt.nome} ${badges}</div>
+            <div class="card-sub">
+              <span class="kcal-val">${Math.round(tot)}</span> kcal
+              <span style="margin:0 6px;opacity:0.3">|</span>
+              C ${Math.round(c)}  P ${Math.round(p)}  G ${Math.round(f)}
+            </div>
+          </div>
+          <span class="chevron">▾</span>
+        </button>
+        <div class="card-body">
+          ${ali.map((a,j) => `
+            <div class="food-row">
+              <div>
+                <div class="food-name">${a.nome}</div>
+                <div class="food-qty">${a.quantita}</div>
+              </div>
+              <div class="food-kcal"><strong>${a.kcal}</strong> kcal</div>
+            </div>
+          `).join("")}
+          ${opt.consiglio ? `<div class="tip">💡 ${opt.consiglio}</div>` : ""}
+          ${opt.note ? `<div class="tip">💡 ${opt.note}</div>` : ""}
+        </div>
+      </div>`;
+  });
+
+  el.innerHTML = html;
+}
+
+function toggle(key) {
+  openCards[key] = !openCards[key];
+  render();
+}
+
+function selectDay(i) {
+  selectedDay = i;
+  openCards = {};
+  render();
+}
+
+function renderWeek() {
+  if (!data.piano_settimanale) return '<div class="loading">Piano settimanale non trovato nel JSON.</div>';
+
+  const days = data.piano_settimanale;
+  const day = days[selectedDay];
+  const mealColors = { colazione:"#F59E0B", spuntino_mattina:"#8B5CF6", pranzo:"#3B82F6", spuntino_pomeriggio:"#a78bfa", cena:"#6366F1" };
+  const mealLabels = { colazione:"☀️ Colazione", spuntino_mattina:"🍎 Spuntino mattina", pranzo:"🍝 Pranzo", spuntino_pomeriggio:"🥜 Spuntino pomeriggio", cena:"🌙 Cena" };
+
+  // Day selector
+  let html = '<div class="day-selector">';
+  days.forEach((d, i) => {
+    const isWe = d.weekend;
+    html += `<button class="day-btn ${selectedDay===i?'active':''} ${isWe?'weekend':''}" onclick="selectDay(${i})">${d.giorno.substring(0,3)}</button>`;
+  });
+  html += '</div>';
+
+  // Day totals
+  let totKcal=0, totC=0, totP=0, totF=0;
+  Object.values(day.pasti).forEach(meal => {
+    meal.alimenti.forEach(a => { totKcal+=a.kcal; totC+=a.carboidrati; totP+=a.proteine; totF+=a.grassi; });
+  });
+
+  const macros = [
+    { label:"kcal", val:Math.round(totKcal), target:1800, color:"#60a5fa" },
+    { label:"carbo", val:Math.round(totC), target:225, color:"#fbbf24" },
+    { label:"prot", val:Math.round(totP), target:113, color:"#f472b6" },
+    { label:"grassi", val:Math.round(totF), target:50, color:"#34d399" },
+  ];
+
+  html += '<div class="day-totals">';
+  macros.forEach(m => {
+    const pct = Math.min(100, (m.val/m.target)*100);
+    html += `<div class="day-total-box">
+      <div class="day-total-val" style="color:${m.color}">${m.val}</div>
+      <div class="day-total-label">${m.label}</div>
+      <div class="day-total-bar"><div class="day-total-fill" style="width:${pct}%;background:${m.color}"></div></div>
+    </div>`;
+  });
+  html += '</div>';
+
+  // Meals
+  const mealOrder = ["colazione","spuntino_mattina","pranzo","spuntino_pomeriggio","cena"];
+  mealOrder.forEach(mealKey => {
+    const meal = day.pasti[mealKey];
+    if (!meal) return;
+
+    const key = `week-${selectedDay}-${mealKey}`;
+    const isOpen = !!openCards[key];
+    const ali = meal.alimenti;
+    const mKcal = ali.reduce((s,a)=>s+a.kcal,0);
+    const mC = ali.reduce((s,a)=>s+a.carboidrati,0);
+    const mP = ali.reduce((s,a)=>s+a.proteine,0);
+    const mF = ali.reduce((s,a)=>s+a.grassi,0);
+    const color = mealColors[mealKey];
+
+    html += `<div class="meal-label" style="color:${color}">${mealLabels[mealKey]}</div>`;
+    html += `<div class="card ${isOpen?'open':''}" style="--accent:${color}">
+      <button class="card-header" onclick="toggle('${key}')">
+        <div style="flex:1">
+          <div class="card-title">${meal.nome}</div>
+          <div class="card-sub">
+            <span class="kcal-val" style="color:${color}">${Math.round(mKcal)}</span> kcal
+            <span style="margin:0 6px;opacity:0.3">|</span>
+            C ${Math.round(mC)}  P ${Math.round(mP)}  G ${Math.round(mF)}
+          </div>
+        </div>
+        <span class="chevron">▾</span>
+      </button>
+      <div class="card-body">
+        ${ali.map(a => `
+          <div class="food-row">
+            <div>
+              <div class="food-name">${a.nome}</div>
+              <div class="food-qty">${a.quantita}</div>
+            </div>
+            <div class="food-kcal"><strong>${a.kcal}</strong> kcal</div>
+          </div>
+        `).join("")}
+        ${meal.nota_speciale ? `<div class="special-note">⚠️ ${meal.nota_speciale}</div>` : ""}
+      </div>
+    </div>`;
+  });
+
+  // Day note
+  if (day.note) {
+    html += `<div class="day-note">📝 ${day.note}</div>`;
+  }
+
+  return html;
+}
+
+function renderGuide() {
+  const freq = data.frequenze_settimanali;
+  const freqColors = {
+    pesce:"#60a5fa", legumi:"#34d399", carne_bianca:"#fbbf24",
+    uova:"#f87171", formaggi:"#f87171", affettati:"#f87171", carne_rossa:"#ef4444"
+  };
+  const freqLabels = {
+    pesce:"Pesce", legumi:"Legumi", carne_bianca:"Carne bianca",
+    uova:"Uova", formaggi:"Formaggi", affettati:"Affettati", carne_rossa:"Carne rossa"
+  };
+
+  let html = `<h3 class="guide-title" style="color:#f472b6">📊 Frequenze settimanali</h3>`;
+  html += `<div class="freq-table">`;
+  Object.entries(freq).forEach(([k,v]) => {
+    const c = freqColors[k]||"#a78bfa";
+    const label = v.max<=1 ? `max ${v.max}x/sett` : v.min===v.max ? `${v.min}x/sett` : `${v.min}-${v.max}x/sett`;
+    if (k==="carne_rossa") {
+      html += `<div class="freq-row"><span>${freqLabels[k]}</span><span class="freq-badge" style="color:${c};background:${c}15">ogni 10-15gg</span></div>`;
+    } else {
+      html += `<div class="freq-row"><span>${freqLabels[k]}</span><span class="freq-badge" style="color:${c};background:${c}15">${label}</span></div>`;
+    }
+  });
+  html += `</div>`;
+
+  // Oil
+  html += `<h3 class="guide-title" style="color:#86efac">🫒 Olio EVO</h3>`;
+  const oil = data.guida_olio;
+  const oilCards = [
+    { icon:"📏", title:"Misura SEMPRE", text: oil.misura },
+    { icon:"🍳", title:"Per cucinare", text: `Padella: ${oil.cottura.padella}. Piastra: ${oil.cottura.piastra}. Forno: ${oil.cottura.forno}.` },
+    { icon:"🥗", title:"Budget giornaliero", text: `Pranzo: ${oil.budget_giornaliero.pranzo_g}g (${oil.budget_giornaliero.pranzo_cucchiaini} cucchiaini). Cena: ${oil.budget_giornaliero.cena_g}g (${oil.budget_giornaliero.cena_cucchiaini} cucchiaini). Totale: ${oil.budget_giornaliero.totale_g}g.` },
+    { icon:"💡", title:"Trucco soffritto", text: oil.cottura.soffritto },
+  ];
+  oilCards.forEach(c => {
+    html += `<div class="info-card" style="border-left:3px solid #22c55e44"><div class="info-title">${c.icon} ${c.title}</div>${c.text}</div>`;
+  });
+
+  // Salt
+  html += `<h3 class="guide-title" style="color:#fde68a;margin-top:20px">🧂 Sale</h3>`;
+  const salt = data.guida_sale;
+  const saltCards = [
+    { icon:"🧂", title:`Max ${salt.limite_giornaliero_g}g/giorno`, text: `${salt.equivalente}. Usa spezie: ${salt.alternative.slice(0,6).join(", ")}.` },
+    { icon:"⚠️", title:"Sale nascosto", text: `Attenzione a: ${salt.sale_nascosto.join(", ")}. Scegli versioni a ridotto contenuto di sale.` },
+    { icon:"🍝", title:"Acqua pasta", text: salt.acqua_pasta },
+    { icon:"📉", title:"Ci si abitua", text: salt.adattamento },
+  ];
+  saltCards.forEach(c => {
+    html += `<div class="info-card" style="border-left:3px solid #eab30844"><div class="info-title">${c.icon} ${c.title}</div>${c.text}</div>`;
+  });
+
+  // Corrections
+  html += `<h3 class="guide-title" style="color:#fca5a5;margin-top:20px">⚠️ Correzioni</h3>`;
+  data.correzioni.forEach(c => {
+    html += `<div class="tip-card" style="border-left:3px solid #ef444444"><strong>${c.titolo}:</strong> ${c.descrizione}</div>`;
+  });
+
+  // Weekend
+  html += `<h3 class="guide-title" style="color:#fbbf24;margin-top:16px">🔥 Weekend anti-abbuffata</h3>`;
+  data.strategia_weekend.forEach((t,i) => {
+    html += `<div class="tip-card"><span class="tip-num" style="background:rgba(251,191,36,0.15);color:#fbbf24">${i+1}</span>${t}</div>`;
+  });
+
+  return html;
+}
+
+loadData();
+</script>
+</body>
+</html>
